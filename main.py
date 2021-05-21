@@ -54,5 +54,5 @@ while True:
         break
 
 
-print(f"Player final score: {user_score}")
+print(f"Player final tally: {user_score}")
 print(f"Computer final score: {computer_score}")
