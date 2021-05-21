@@ -19,29 +19,29 @@ while True:
     user_score = 0
     computer_score = 0
     print()
-    user_action = input("Hunter, Ninja or Bear): ")
+    user = input("Hunter, Ninja or Bear): ")
     possible_actions = ["Hunter", "Ninja", "Bear"]
-    computer_action = random.choice(possible_actions)
-    print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+    computer = random.choice(possible_actions)
+    print(f"\nYou chose {user}, computer chose {computer}.\n")
 
-    if user_action.lower() == computer_action.lower():
-        print(f"Both players selected {user_action}, play again!")
-    elif user_action.lower() == "Hunter":
-        if computer_action.lower() == "Bear":
+    if user.lower() == computer.lower():
+        print(f"Both players selected {user}, play again!")
+    elif user.lower() == "Hunter":
+        if computer.lower() == "Bear":
             print("Hunter kills Bear! You win!")
             user_score = user_score + 1
         else:
             print("Ninja karate chops Hunter! You lose.")
             computer_score = computer_score + 1
-    elif user_action.lower() == "Ninja":
-        if computer_action.lower() == "Hunter":
+    elif user.lower() == "Ninja":
+        if computer.lower() == "Hunter":
             print("Ninja karate chops Hunter! You win!")
             user_score = user_score + 1
         else:
             print("Bear mauls Ninja! You lose.")
             computer_score = computer_score + 1
-    elif user_action.lower() == "Bear":
-        if computer_action.lower() == "Ninja":
+    elif user.lower() == "Bear":
+        if computer.lower() == "Ninja":
             print("Bear mauls Ninja! You win!")
             user_score = user_score + 1
         else:
