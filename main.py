@@ -55,4 +55,4 @@ while True:
 
 
 print(f"Player final tally: {user_score}")
-print(f"Computer final score: {computer_score}")
+print(f"Computer final tally: {computer_score}")
